@@ -1,0 +1,433 @@
+@font-face {
+	font-family: Starjedi;
+	src: url(Starjedi.ttf);
+}
+
+/*Página Principal (index)*/
+
+body {
+	margin: 0 0;
+	padding: 0 0; 
+	font-family: Starjedi;
+}
+
+header {
+	background: black;
+	height: 100px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0;
+	display: inline-block;
+}
+
+#logo-principal {
+	width: 200px;
+	padding: 25px 30%;
+}
+
+nav {
+	position: absolute;
+	display: inline-block;
+	right: 2%;
+	top: 1.5em;
+}
+
+nav li {
+	font-size: 1em;
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	color: white;
+}
+
+nav a:hover {
+	color: #1ed760;
+	cursor: pointer;
+}
+
+ul p {
+	font-family: arial; 
+	color:white; 
+	display: inline-block; 
+	margin-left: 15px;
+}
+
+.caixa {
+	width: 100%;
+	height: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.foto-fundo img {
+	position: absolute;
+}
+
+#yoda {
+	right: 0;
+	height: 100%; 
+}
+
+#darth {
+	height: 100%;
+}
+
+.fundo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: linear-gradient(#000000, #1ed760);
+}
+
+.principal {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: linear-gradient(#000000, #1ed760);
+	opacity: 0.5;
+}
+
+.titulo {
+	margin: 0;
+	color: white;
+	position: relative;
+	font-size: 6em;
+	text-align: center;
+	line-height: 1;
+}
+
+main p {
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	position: relative;
+	font-size: 24px;
+	text-align: center;
+}
+
+button {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	padding: 20px;
+	background: #FFFFFF;
+	font-weight: bold;
+	color: #1ebb60;	
+	border: 0 solid #1ebb60;
+	border-radius: 50px;
+	position: relative;
+	text-align: center;
+}
+
+button:hover {
+	background: #1ebb60;
+	color: #FFFFFF;
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.texto {
+	padding: 200px 5% 0 5%;
+}
+
+.botao {
+	text-align: center;
+	width: 100%;
+	margin: 10% auto;
+}
+
+button a:visited{
+	color: #1ebb60;	
+}
+
+footer {	
+	height: 100%;
+	background: black;
+}
+
+.rodape {
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
+	padding: 50px;
+	text-align: center;
+}
+
+.imagem-rodape {
+	position: relative;
+	width: 150px;
+	margin: 15px auto;
+}
+
+.menu-coluna {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	padding: 0 10px;
+	color: none;
+}
+
+.menu-coluna li {
+	display: block;
+	color: gray;
+	font-family: sans-serif;
+	margin: 8% 0;
+	padding-left: 40px; 
+}
+
+.menu-coluna li a:visited {
+	color: #FFFFFF;
+}
+
+.menu-coluna li a:hover {
+	color: #1ed760;
+}
+
+.titulo-menu {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding-bottom: 13%; 
+}
+
+.contatos {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 25px 0 0 40px; 
+}
+
+.rede-social {
+	width: 40px;
+	background: white;
+	border-radius: 100%;
+	border: 2px solid white;
+}
+
+.rede-social:hover {
+	background: #1ebb60;
+	border-radius: 100%;
+	border-color: #1ebb60;
+}
+
+@media screen and (max-width: 1123px) {
+	.imagem-rodape {
+		display: block;
+	}
+
+	.contatos {
+		display: list-item;
+		padding: 0;
+	}
+
+	.rede-social {
+		margin: 5px 10px;
+	}
+}
+
+@media screen and (max-width: 810px) {
+	header {
+		height: 200px;
+	}
+
+	h1 {
+		display: inline;
+	}
+
+	#logo-principal {
+		display: block;
+		margin: 0 auto;
+	}
+
+	nav {
+		display: block;
+		position: relative;
+		text-align: center;
+	}
+
+	nav ul {
+		padding: 0;
+		font-size: 90%;
+		margin: 0;
+	}
+
+	.titulo {
+		font-size: 500%;
+	}
+
+	.texto p {
+		font-size: 100%;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	header { 
+		height: 200px;
+		width: 100%;
+	}
+
+	#logo-principal {
+		margin: 0 auto;
+		width: 7em;
+		padding: 50px 0 10px 0;
+	}
+
+	.caixa {
+		height: auto;
+	}
+
+	nav {
+		top: auto;
+		right: 25px;
+	}
+
+	nav ul {
+		font-size: 1em;
+		padding-left: 40px; 
+	}
+
+	nav li {
+		font-size: 0.6em;
+		margin: 0 5px 0 0;
+	}
+
+	nav p {
+		margin: 0;
+	}
+
+	#yoda, #darth {
+		height: 100%;
+	}
+
+	.texto {
+		padding-top: 50px; 
+	}
+
+	.titulo {
+		font-size: 2.5em;
+	}
+
+	.texto p {
+		font-size: 0.8em;
+	}
+
+	.botao {
+		font-size: 0.5em;
+		margin: 0;
+		padding-bottom: 50px; 
+		padding-top: 25px;
+	}
+
+	button {
+		padding: 12px;
+	}
+
+	.rodape {
+		width: auto;
+		text-align: left;
+		font-size: 1em;
+	}
+
+	.imagem-rodape {
+		width: 30%;
+		position: absolute;
+		left: 5px;
+		top: 5px;
+	}
+
+	.menu-coluna {
+		display: block;
+	}
+
+	.menu-coluna li {
+		margin: 10px 0;
+	}
+
+	.titulo-menu {
+		padding: 25px 0 15px 0;
+	}
+
+	.contatos {
+		position: absolute;
+		right: 5px;
+		top: 15px;
+	}
+
+	.rede-social {
+		width: 30px;
+	}
+
+}
+
+/*ERRO*/
+.erro {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.caixa-erro {
+	padding: 80px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.caixa-erro img{
+	display: inline-block;
+	width: 30%;
+}
+
+.caixa-erro p {
+	margin: 0;
+	padding: 0 5px;
+	text-align: center;
+	font-family: Starjedi;
+	font-size: 5em;
+	display: inline-block;
+	position: absolute;
+	top: 30%;
+	text-shadow: 3px 3px 15px #555555; 
+}
+
+@media screen and (max-width: 1500px) {
+	.caixa-erro p {
+		font-size: 4em;
+	}
+}
+
+@media screen and (max-width: 1230px) {
+	.caixa-erro {
+		padding: 50px 0; 
+	}
+
+	.caixa-erro img{
+		display: block;
+		margin: 0 auto;
+		width: 400px;
+	}
+
+	.caixa-erro p {
+		position: relative;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 545px) {
+	.caixa-erro img {
+		width: 80%;
+	}
+
+	.caixa-erro p {
+		font-size: 3em;
+	}
+}
+
