@@ -17,29 +17,34 @@
 			<div class="caixa">
 				<p>Para continuar, faça o login no Spotify.</p>
 
-				<button class="facebook"><a>Continuar com o Facebook</a></button>
-				<button class="apple"><a>Continuar com a Apple</a></button>
-				<button class="google"><a>Continuar com o Google</a></button>
-				<button class="telefone"><a>Continuar com um número de telefone</a></button>
+				<button class="facebook"><p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 30 30" style=" fill:#FFFFFF;"><path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z"></path></svg>Continuar com o Facebook</p></button>
+				<button class="apple"><p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 30 30" style=" fill:#FFFFFF;">    <path d="M25.565,9.785c-0.123,0.077-3.051,1.702-3.051,5.305c0.138,4.109,3.695,5.55,3.756,5.55 c-0.061,0.077-0.537,1.963-1.947,3.94C23.204,26.283,21.962,28,20.076,28c-1.794,0-2.438-1.135-4.508-1.135 c-2.223,0-2.852,1.135-4.554,1.135c-1.886,0-3.22-1.809-4.4-3.496c-1.533-2.208-2.836-5.673-2.882-9 c-0.031-1.763,0.307-3.496,1.165-4.968c1.211-2.055,3.373-3.45,5.734-3.496c1.809-0.061,3.419,1.242,4.523,1.242 c1.058,0,3.036-1.242,5.274-1.242C21.394,7.041,23.97,7.332,25.565,9.785z M15.001,6.688c-0.322-1.61,0.567-3.22,1.395-4.247 c1.058-1.242,2.729-2.085,4.17-2.085c0.092,1.61-0.491,3.189-1.533,4.339C18.098,5.937,16.488,6.872,15.001,6.688z"></path></svg>Continuar com a Apple</p></button>
+				<button class="google"><p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 48 48" style=" fill:#000000;"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path></svg>Continuar com o Google</p></button>
+				<button class="telefone" href="erro.html"><p>Continuar com um número de telefone</p></button>
 
-				<p>ou</p>
+				<p class="ou">ou</p>
 
 				<form>
-					<label for="username">Endereço de e-mail ou nome de usuário</label>
-					<input id="username" type="text" placeholder="Endereço de e-mail ou nome de usuário">
+					<div class="dados">
+						<label for="username">Endereço de e-mail ou nome de usuário</label>
+						<input id="username" type="text" placeholder="Endereço de e-mail ou nome de usuário">
 
-					<label for="senha">Senha</label>
-					<input id="senha" type="password" placeholder="Senha">
-				
-					<a>Esqueceu a senha?</a>
+						<label for="senha">Senha</label>
+						<input id="senha" type="password" placeholder="Senha">
+					</div>
+					<a href="erro.html">Esqueceu a senha?</a>
 
-					<label><input type="checkbox">Lembrar de mim</label>
+					<div class="botoes">
+						<label class="lembrar"><input type="checkbox" checked><span class="check"></span><span class="lembrar-escrita">Lembrar de mim</span></label>
 
-					<input type="submit" value="Entrar">
+						<input class="entrar" type="submit" value="Entrar">
+					</div>
 				</form>
 
+				<hr>
+
 				<p>Não tem conta?</p>
-				<button><a>Inscreva-se no Spotify</a></button>
+				<button><p>Inscreva-se no Spotify</p></button>
 			</div>
 		</main>
 	</body>

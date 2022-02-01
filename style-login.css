@@ -1,6 +1,6 @@
 header {
 	background: black;
-	height: 125px;
+	height: 100px;
 }
 
 body{
@@ -11,30 +11,179 @@ body{
 #logo-centralizado {
 	position: relative;
 	display: block;
-	width: 300px;
+	width: 200px;
 	margin: 0 auto;
 	padding: 15px;
 }
 
 .caixa {
-	margin: 50px auto;
-	width: 50%;
+	margin: 30px auto;
+	width: 450px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 
 button {
-	font-size: 1.3em;
+	background-color: #FFFFFF;
+	font-size: 0.9em;
 	border-radius: 50px;
 	width: 450px;
-	height: 60px;
+	height: 50px;
 	margin: 5px auto;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-flex;
+	color: #555555;
+	border: 1px solid #555555;
+}
+
+button:hover {
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+button p {
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+
+svg {
+	margin: 10px;
 }
 
 .facebook {
-	background: blue;
+	background: #3B5998;
+	color: #FFFFFF;
+	border: none;
 }
+
+.apple {
+	background: #000000;
+	color: #FFFFFF;
+	border: none;
+}
+
+.ou {
+	margin: 20px;
+}
+
+form {
+	display: block;
+	width: 450px;
+	text-align: left;
+}
+
+form .dados {
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+input {
+	border-radius: 5px;
+	border: 1px solid #666666;
+	padding: 0 10px;
+}
+
+input:hover {
+	border-color: #111111;
+}
+
+#senha, #username {
+	width: 450px;
+	height: 50px;
+	margin: 2px auto 20px auto;
+	font-size: 1.2em;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+	margin: 5px 0;
+	display: inline-block;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.botoes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.lembrar {
+	margin: 10px 0;
+	font-size: 0.9em;
+}
+
+.check{
+	position: absolute;
+	left: 0;
+	margin: 3px;
+	height: 15px;
+	width: 15px;
+	border-radius: 4px;
+	border: 1px solid #555555;
+	background-color: #FFFFFF;
+}
+
+.lembrar:hover input ~ .check {
+	border-color: #1ebb60;
+}
+
+.lembrar input:checked ~ .check {
+	background-color: #1ebb60;
+	border-color: #1ebb60;
+}
+
+.lembrar .check:after {
+	content: "";
+	position: absolute;
+	display: none;
+	left: 3.5px;
+	top: 1px;
+	width: 3px;
+	height: 8px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+
+.lembrar input:checked ~ .check:after {
+	display: block;
+}
+
+.lembrar-escrita {
+	margin: 0 10px;
+}
+
+.entrar {
+	width: 150px;
+	height: 50px;
+	border-radius: 50px;
+	background: #1ebb60;
+	color: #FFFFFF;
+	font-size: 1.1em;
+	border: none;
+	text-transform: uppercase;
+}
+
+.entrar:hover {
+	background: #24E073;
+	transform: scale(1.05);
+}
+
+hr {
+	border: 1px solid #DDDDDD;
+	width: 100%;
+	margin: 20px 0;
+}
+
+
+
 
