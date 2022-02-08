@@ -184,6 +184,66 @@ hr {
 	margin: 20px 0;
 }
 
+.baby-yoda {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 200px;
+}
 
+@media screen and (max-width: 850px) {
+	.baby-yoda {
+		bottom: auto;
+	}
+}
 
+@media screen and (max-width: 480px) {
+	button {
+		width: 95%;
+	}
+
+	#username, #senha {
+		width: 90%;
+	}
+
+	.caixa {
+		width: 100%;
+	}
+
+	.botoes {
+		width: 100%;
+		display: block;
+	}
+
+	.entrar {
+		display: block;
+		margin: 20px 0;
+		width: 100%;;
+	}
+
+	form {
+		width: auto;
+		text-align: center;
+	}
+
+	.dados {
+		align-items: center;
+	}
+
+	.botoes{
+		text-align: left;
+	}
+
+	.check, .lembrar {
+		margin: 0 10px;
+	}
+
+	form a {
+		text-decoration: underline;
+		position: absolute;
+		right: 10px;
+		margin: 0;
+	}
+
+}
 
